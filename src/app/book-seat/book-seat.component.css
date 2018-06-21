@@ -1,0 +1,37 @@
+.book-seat-block {
+    max-width: 350px;
+    margin: 50px auto;
+    border: 1px solid #cdcdcd;
+    background: #f3f3f3;
+    border-radius: 4px;
+    padding: 15px;
+}
+
+.bus-container {
+    padding: 8px;
+    border: 1px solid #cdcdcd;
+    background: aqua;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.btn.show-hide {
+    position: absolute;
+    right: 0;
+    top: 8px;
+}
+
+.seats {
+    background-color: cadetblue;
+    padding: 8px;
+}
+
+.seat {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.book-btn {
+    margin-top: 15px;
+}

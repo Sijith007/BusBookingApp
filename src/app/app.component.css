@@ -1,0 +1,9 @@
+.container {
+    padding: 15px;
+}
+
+ng-progress::ng-deep .spinner-icon {
+    
+        /* border-top-color: #fff !important;
+        border-left-color: #fff !important; */
+}

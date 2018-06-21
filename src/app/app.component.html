@@ -1,0 +1,15 @@
+<app-header></app-header>
+<div class="container">
+    <ng-progress [positionUsing]="'marginLeft'" [minimum]="0.15" [maximum]="1"
+             [speed]="200" [showSpinner]="true" [direction]="'rightToLeftIncreased'"
+             [color]="'white'" [trickleSpeed]="250" [thick]="false" [ease]="'linear'"
+></ng-progress>
+<app-lifecycle [title]="title"></app-lifecycle>
+<app-observable></app-observable>
+<app-alert></app-alert> 
+  <router-outlet></router-outlet>
+</div>
+
+
+<app-footer></app-footer>
+

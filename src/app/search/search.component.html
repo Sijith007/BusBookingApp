@@ -1,0 +1,28 @@
+<div class="search-block">
+    <form [formGroup]="searchForm"> 
+      <div class="container">
+        <div class="form-group">
+          <label for="fromPlace">
+            <b>From</b>
+          </label>
+          <input class="form-control" formControlName="fromPlace" type="text" placeholder="From" name="fromPlace" />
+        </div>
+        
+        <div class="form-group">
+          <label for="toPlace">
+              <b>To</b>
+            </label>
+            <input class="form-control" formControlName="toPlace" type="text" placeholder="To" name="toPlace">
+        </div>
+
+        <div class="form-group">
+            <label for="date">
+                <b>Date</b>
+              </label>
+              <input class="form-control" formControlName="date" type="date" placeholder="Date" name="date" required>
+          </div>
+  
+        <button class="btn primary" type="submit" (click)="validateSearch()">Search</button>
+      </div>
+    </form>
+  </div>

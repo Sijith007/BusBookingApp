@@ -1,0 +1,14 @@
+footer {
+    margin: 0;
+    padding: 8px 0;
+    position: fixed;
+    bottom: 0;
+    background-color: brown;
+    color: #ffffff;
+    width: 100%;
+    text-align: right;
+}
+
+.copy-right {
+    padding: 0 8px;
+}

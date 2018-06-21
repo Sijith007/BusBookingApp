@@ -1,0 +1,11 @@
+<header>
+  <h4>BookBus</h4>
+  <a routerLink="">Login</a>
+  <a routerLink="payment">Payment</a>
+  <a routerLink="search">Search Bus</a>
+  <div>
+   <select (change)="loadAjax()" [(ngModel)]="selectedOption">
+     <option *ngFor="let option of options" [value]="option.url">{{option.name}}</option>
+   </select> 
+  </div>
+</header>

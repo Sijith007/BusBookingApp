@@ -1,0 +1,11 @@
+<div class="payment-block">
+    <div class="row">
+        <div class="col-xs-6">Bus Name: </div><div class="col-xs-6">{{bus.name}}</div>
+        <div class="col-xs-6">Amount: </div><div class="col-xs-6">{{bookedAmount | currency: 'INR'}}</div>
+        <div class="col-xs-6">GST: </div><div class="col-xs-6">{{bookedAmount | gst:12:1000 | currency: 'INR'}}</div>
+        <div class="col-xs-6">Total: </div><div class="col-xs-6">{{bookedAmount | gst:12:1000:true | currency: 'INR'}}</div>
+    </div>
+    <div class="btn-container">
+        <button class="btn" (click)="bookSeat()">Submit</button>
+    </div>
+</div>

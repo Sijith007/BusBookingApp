@@ -1,0 +1,23 @@
+<div class="book-seat-block">
+    <div class="bus-container" *ngFor="let bus of buses">
+      <div>{{bus.name}}</div>
+      <div>Amount: {{bus.amount | currency:'INR'}}</div>
+      <button class="btn show-hide" (click)="bus.showSeats = !bus.showSeats">{{bus.showSeats ? '-' : '+'}}</button>
+      <div class="seats" *ngIf="bus.showSeats">
+        <div class="seat" *ngFor="let seat of bus.seates">
+          <label>{{seat.id}}
+            <input type="checkbox" (click)="selectSeat(seat)" [checked]="0 != seat.userId" [disabled]="0 != seat.userId"/>
+          </label>
+        </div>
+        <button class="btn book-btn" (click)="bookSeats(bus)">Book</button>
+      </div>
+      <div class="seats" *ngIf="bus.showSeats && bus.alreadySelectedSeats && bus.alreadySelectedSeats.length > 0">
+        <div class="seat" *ngFor="let seat of bus.alreadySelectedSeats">
+          <label>{{seat.id}}
+            <input type="checkbox" (click)="selectSeatForCancel(seat)" />
+          </label>
+        </div>
+        <button class="btn book-btn" (click)="cancelSeats(bus)">Cancel Booking</button>
+      </div>
+    </div>
+  </div>
